@@ -1,5 +1,4 @@
 import logo from "../assets/images/logo.png";
-import mobileMenu from "../assets/icons/menu.png";
 import search from "../assets/icons/search.png";
 import mail from "../assets/icons/mail.png";
 import globe from "../assets/icons/globe.png";
@@ -67,16 +66,15 @@ export const NavBar = () => {
     <nav class="border-gray-200 bg-white shadow-sm">
       <div class="mx-auto flex max-w-screen-xl items-center justify-between p-4">
         <div class="mr-4 flex items-center gap-2">
-          <img src={mobileMenu} alt="" class="w-6 lg:hidden" />
           <a href="/" class="shrink">
             <img src={logo} class="mr-3 h-8" alt="Logo" />
           </a>
         </div>
         <div
-          class="absolute bottom-0 left-0 right-0 top-0 -z-50 hidden h-[100vh] bg-white pt-20 lg:relative lg:z-0 lg:block lg:h-auto lg:w-auto lg:pt-0"
+          class=" relative bottom-0 left-0 right-0 top-0  block bg-white   "
           id="navbar-default"
         >
-          <ul class="relative flex flex-col p-0 font-medium lg:flex-row lg:space-x-2">
+          <ul class="relative flex   flex-row space-x-2 p-0 font-medium">
             {NAVIGATION_ROUTES.map(({ title, urlPath, nestedRoutes }) => (
               <NavBarItem
                 title={title}
