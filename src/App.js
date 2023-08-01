@@ -1,10 +1,12 @@
-import { MobileNavBar } from "./components/mobile-nav-bar.component";
+// import { MobileNavBar } from "./nav-bar/mobile-nav-bar.component";
 // import { NavBar } from "./components/nav-bar.component";
+
+import { NavBar } from "./nav-bar";
 
 function App() {
   return (
     <>
-      <MobileNavBar />
+      <NavBar />
       <p>
         n this blog post we’re going to cover how to use WebSockets to create
         real-time web applications. Before we dive into learning about the
